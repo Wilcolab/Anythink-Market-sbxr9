@@ -31,6 +31,7 @@ class Editor extends React.Component {
 
     const updateFieldEvent = (key) => (ev) =>
       this.props.onUpdateField(key, ev.target.value);
+
     this.changeTitle = updateFieldEvent("title");
     this.changeDescription = updateFieldEvent("description");
     this.changeImage = updateFieldEvent("image");

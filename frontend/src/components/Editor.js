@@ -31,6 +31,7 @@ class Editor extends React.Component {
 
     const updateFieldEvent = (key) => (ev) =>
       this.props.onUpdateField(key, ev.target.value);
+
     this.changeTitle = updateFieldEvent("title");
     this.changeDescription = updateFieldEvent("description");
     this.changeImage = updateFieldEvent("image");
@@ -123,6 +124,7 @@ class Editor extends React.Component {
                       placeholder="Image url"
                       value={this.props.image}
                       onChange={this.changeImage}
+                      defaultValue={"../imgs/topbar_logo.png"}
                     />
                   </fieldset>
 

@@ -124,6 +124,7 @@ class Editor extends React.Component {
                       placeholder="Image url"
                       value={this.props.image}
                       onChange={this.changeImage}
+                      defaultValue={"../imgs/topbar_logo.png"}
                     />
                   </fieldset>
 

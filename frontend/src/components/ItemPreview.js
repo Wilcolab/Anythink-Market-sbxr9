@@ -35,7 +35,7 @@ const ItemPreview = (props) => {
       className="card bg-dark border-light p-3"
       style={{ borderRadius: "20px" }}
     >
-      {item.image !== "" ? (
+      {this.props.item.image === undefined || this.props.item.image === ""? (
         <img
           alt="item"
           src={item.image}
